@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONOS | The Art of Precision</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="is-loading">
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-logo">CHRONOS</div>
+        <div class="preloader-bar"><span id="preloaderBar"></span></div>
+        <div class="preloader-count" id="preloaderCount">0%</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a class="logo" href="#top">CHRONOS</a>
+        <div class="nav-links">
+            <a href="#details">Collection</a>
+            <a href="#craft">Heritage</a>
+            <a href="#specs">Craftsmanship</a>
+        </div>
+        <button class="btn-outline">Book an appointment</button>
+    </nav>
+
+    <!-- Scroll sequence (hero + chapters) -->
+    <div class="scroll-container" id="scrollContainer">
+        <div class="canvas-sticky-wrapper" id="top">
+            <canvas id="watchCanvas"></canvas>
+            <div class="vignette"></div>
+
+            <!-- Chapters: always top-left -->
+            <div class="chapter chapter-hero is-active" data-start="0" data-end="0.13">
+                <h1><span class="line"><span>The art</span></span><span class="line"><span>of precision</span></span></h1>
+                <p>Scroll to take the Calibre 9900 apart, one component at a time.</p>
+            </div>
+
+            <div class="chapter" data-start="0.17" data-end="0.4">
+                <h2>Swiss engineering</h2>
+                <p>Every component is made to tolerances measured in microns.</p>
+            </div>
+
+            <div class="chapter" data-start="0.45" data-end="0.7">
+                <h2>The Calibre 9900</h2>
+                <p>More than 150 moving parts, assembled by hand in a single workshop.</p>
+            </div>
+
+            <div class="chapter" data-start="0.75" data-end="0.97">
+                <h2>Uncompromising materials</h2>
+                <p>Grade 5 titanium and sapphire crystal, built to be handed down.</p>
+            </div>
+
+            <div class="scroll-hint" id="scrollHint"><span>Scroll</span><i></i></div>
+
+            <!-- Progress -->
+            <div class="progress" aria-hidden="true">
+                <div class="progress-track"><span id="progressFill"></span></div>
+                <div class="progress-label"><b id="progressNow">01</b> / 70</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specs -->
+    <section class="specs" id="specs">
+        <h2>Built to a standard,<br>not a price.</h2>
+        <dl>
+            <div><dt>Case</dt><dd>42 mm</dd><p>Grade 5 titanium, brushed and polished by hand.</p></div>
+            <div><dt>Power reserve</dt><dd>60 hours</dd><p>Fully wound, the watch runs through a long weekend.</p></div>
+            <div><dt>Water resistance</dt><dd>100 m</dd><p>Tested for 24 hours under pressure before it ships.</p></div>
+            <div><dt>Components</dt><dd>150+</dd><p>Each one inspected under magnification.</p></div>
+        </dl>
+    </section>
+
+    <!-- Details -->
+    <section class="details" id="details">
+        <figure class="d1">
+            <div class="frame"><img src="img/movement.webp" alt="The Calibre 9900 movement with its gold-toned rotor and gear train" loading="lazy"></div>
+            <figcaption><h3>The movement</h3><p>A column-wheel chronograph with a hand-finished rotor. You can see it work through the sapphire case back.</p></figcaption>
+        </figure>
+        <figure class="d2">
+            <div class="frame"><img src="img/case.jpg" alt="The steel case with crown and pushers" loading="lazy"></div>
+            <figcaption><h3>The case</h3><p>Milled from a single block, then finished in four stages.</p></figcaption>
+        </figure>
+        <figure class="d3">
+            <div class="frame"><img src="img/bracelet.webp" alt="Bracelet links with their pins" loading="lazy"></div>
+            <figcaption><h3>The bracelet</h3><p>Solid links, pinned rather than pressed, so it can be repaired for life.</p></figcaption>
+        </figure>
+    </section>
+
+    <!-- Craft -->
+    <section class="craft" id="craft">
+        <p class="statement">Each watch takes fourteen weeks to build. We don't speed it up.</p>
+        <ul>
+            <li><h3>Finished by hand</h3><p>Bridges are chamfered and polished under a loupe, one at a time.</p></li>
+            <li><h3>Tested for 15 days</h3><p>Every watch is checked in six positions and three temperatures.</p></li>
+            <li><h3>Serviced for life</h3><p>Our workshop repairs any Chronos watch, whatever its age.</p></li>
+        </ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="footer-cta">
+        <div class="cta-bg"></div>
+        <h2>Own the extraordinary</h2>
+        <p>Each year we make 600 watches. Reserve yours today.</p>
+        <button class="btn-primary">Discover the collection</button>
+        <footer>
+            <span>© 2026 Chronos</span>
+            <span>Rue du Rhône 14, Geneva</span>
+            <span>Privacy and terms</span>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
